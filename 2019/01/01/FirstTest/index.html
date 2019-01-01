@@ -358,9 +358,22 @@
       
     </div>
 
-    <div id="gitalk-container"></div>
+    <div id="gitalk-container">1111111111111111</div>
   </div>
 
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'f3a63dd3f14ac64aadab',
+    clientSecret: '5a460bdcd103641f844d93c9b95cc2f5520f0752',
+    repo: 'zhning12.github.io',
+    owner: 'zhning12',
+    admin: ['zhning12'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+</script>
 
           </div>
           
